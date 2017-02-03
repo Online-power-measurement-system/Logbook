@@ -5,9 +5,22 @@
     <description>A little blog to track the work progress of our project</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 03 Feb 2017 01:31:48 +0000</pubDate>
-    <lastBuildDate>Fri, 03 Feb 2017 01:31:48 +0000</lastBuildDate>
+    <pubDate>Fri, 03 Feb 2017 10:19:09 +0000</pubDate>
+    <lastBuildDate>Fri, 03 Feb 2017 10:19:09 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;p&gt;So this is the beginning.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Feb 2017 10:18:00 +0000</pubDate>
+        <link>http://localhost:4000/2017/02/03/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/03/hello-world/</guid>
+        
+        <category>words</category>
+        
+        
+      </item>
     
   </channel>
 </rss>
