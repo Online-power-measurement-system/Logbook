@@ -24,4 +24,4 @@ Figure 1 is the finished connection of the Raspberry Pi and the camera.
 ![component](img/site/component.jpg)
 
 Figure 2 shows the test result of Camera V2. From this picture, figures of students can recognized but it is not that clear because the photo resolution is not very well. This problem is related to the camera itself.
-![sideface](img/site/sideface.jpg)
+![sideface](img/site/icon.png)
