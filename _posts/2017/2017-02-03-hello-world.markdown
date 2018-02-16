@@ -1,9 +1,9 @@
 ---
 layout: "post"
 title: "Hello World"
-date: "2017-02-03 10:18"
-author: "Juntong Liu"
+date: "2018-02-16 10:17"
+author: "Fang Zhou"
 tag: words
 ---
 
-So this is the beginning.
+Hello world, this is the first try of our group.
