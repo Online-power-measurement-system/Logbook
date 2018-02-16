@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "The summary of first week"
+title: "The summary of the first week"
 date: "2018-02-16 10:32"
 author: "Fang Zhou"
 catalog: true
