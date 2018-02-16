@@ -1,11 +1,11 @@
 # Site settings
-title: HelloRobotics's Daily Work
-SEOTitle: HelloRobotics's Daily Work
+title: Door surveillance system based on Raspberry Pi
+SEOTitle: Door surveillance system based on Raspberry Pi
 header-img: https://source.unsplash.com/category/nature/2600x500
-email: towdium@gmail.com
-description: "A little blog to track the work progress of our project"
-keyword: "HelloRobotics"
-url: "http://hellorobotics.github.io"              # your host, for absolute URL
+email: fang.zhoudzt@gmail.com
+description: "The blog which recording work process of our project"
+keyword: "Door surveillance system, Raspberry Pi"
+url: "http://zfdzt.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -14,7 +14,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 RSS: true
 #weibo_username:     5092127194
 #zhihu_username:
-github_username:    HelloRobotics
+github_username:    zfdzt
 #twitter_username:  huxpro
 #facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
@@ -80,13 +80,3 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 
-# Friends
-friends: [
-    {
-        title: "Shell Cottage",
-        href: "http://shellcottage.me/"
-    }, {
-        title: "Towdium's Here",
-        href: "http://towdium.github.io/"
-    }
-]
