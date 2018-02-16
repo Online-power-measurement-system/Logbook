@@ -6,4 +6,4 @@ author: "Fang Zhou"
 tag: words
 ---
 
-Hello world! This is the first try of our project
+Hello world! This is the first try of our group.
