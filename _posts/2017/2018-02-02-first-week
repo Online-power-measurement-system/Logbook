@@ -1,8 +1,9 @@
 ---
 layout: "post"
-title: "Hello World"
+title: "The summary of first week"
 date: "2018-02-16 10:32"
 author: "Fang Zhou"
+catalog: true
 ---
 
 ## Components of the project
