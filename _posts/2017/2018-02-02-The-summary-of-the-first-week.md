@@ -21,7 +21,7 @@ catalog: true
 -	The biggest problem encountered this week is that Raspberry Pi cannot connect to the wifi of the university. We tried to edit some codes in the network part of Raspberry Pi but failed. Finally, we use “SSH Connect”, which is method to let Raspberry Pi share the computer’s network. However, a weakness is that the network becomes slow.
 ## Achievement in this week:
 Figure 1 is the finished connection of the Raspberry Pi and the camera.
-![component](/zfdzt.github.io/tree/master/img/site/component.jpg)
+![component](https://github.com/zfdzt/zfdzt.github.io/blob/master/img/site/component.jpg)
 
 Figure 2 shows the test result of Camera V2. From this picture, figures of students can recognized but it is not that clear because the photo resolution is not very well. This problem is related to the camera itself.
 ![sideface](/zfdzt.github.io/tree/master/img/site/icon.png)
