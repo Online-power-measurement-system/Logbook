@@ -7,15 +7,15 @@ catalog: true
 ---
 ## Summary of Week’s Activities
 
-- e the problem of real-time face recognition.
-- ite the code for Raspberry Pi to drive LED lights.
-- Rn the program which can recognize the face and control LED lights.
-
+- Solve the problem of real-time face recognition.
+- Write the code for Raspberry Pi to drive LED lights.
+- Run the program which can recognize the face and control LED lights.
 
 ## Problem encountered and solutions
 
-- When we installed the OpenCV library function, we found the CPU was in high load. We had to use the fan to cool down the chip.
-- The code could not run for there are over three errors. After searching the answers in goole, we debugged it.
+- In the beginning, the system cannot shoot the video and recognize the human’s face at the same time. Finally, we find some information from the Internet and modify the code to solve this problem.
+- We try to combine the code of controlling LED and recognizing face. However, there is a problem that when the camera has recognized a face, the LED is light, but the display of camera is stuck. This problem now we can’t solve it.
+
 
 ## Achievement in this week
 
