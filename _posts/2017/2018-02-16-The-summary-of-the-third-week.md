@@ -65,15 +65,11 @@ GPIO.cleanup()
 ```python
 import RPi.GPIO as GPIO
 import time
-
 GPIO.setmode(GPIO.BCM)
-
 TRANS_IN=2	#transfer 
 OUT=24
-
 GPIO.setup(TRANS_IN,GPIO.IN)	#receive the data from PIN TRANS_OUT
 GPIO.setup(OUT,GPIO.OUT)	#control the LED
-
 data=0
 while True:
 	data=GPIO.input(TRANS_IN)
@@ -82,7 +78,6 @@ while True:
     	    GPIO.output(OUT, True)
     	    time.sleep(5)
     	    GPIO.output(OUT, False)
-
 GPIO.output(OUT, False)
 RPi.GPIO.cleanup()
 ```
