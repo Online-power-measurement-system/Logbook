@@ -72,4 +72,28 @@ for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port
 
 GPIO.cleanup()
 ```
-- We found the problems in our code and solve them by searching in the Internet. It helped us to grasp the operating instructions.
+- The code for LED is shown as follows.
+```python
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)
+
+TRANS_IN=2	#transfer 
+OUT=24
+
+GPIO.setup(TRANS_IN,GPIO.IN)	#receive the data from PIN TRANS_OUT
+GPIO.setup(OUT,GPIO.OUT)	#control the LED
+
+data=0
+while True:
+	data=GPIO.input(TRANS_IN)
+	print(data)
+	if data==1 :
+    	    GPIO.output(OUT, True)
+    	    time.sleep(5)
+    	    GPIO.output(OUT, False)
+
+GPIO.output(OUT, False)
+RPi.GPIO.cleanup()
+```
