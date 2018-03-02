@@ -21,25 +21,23 @@ catalog: true
 
 - The code for recognizing human face is shown as follows. 
 ```Python
-from picamera.array import PiRGBArray ### Imports ###
+from picamera.array import PiRGBArray 
 from picamera import PiCamera
 import cv2
 import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BCM) # Setup the GPIO mode as pin-coded
-#Set GPIO 18 as output mode
-TRANS_OUT=18
+GPIO.setmode(GPIO.BCM)   #Setup the GPIO mode as pin-coded
+TRANS_OUT=18   #Set GPIO 18 as output mode
 GPIO.setup(TRANS_OUT, GPIO.OUT)
-camera = PiCamera() # Setup the camera
+camera = PiCamera()   #Setup the camera
 camera.resolution = ( 320, 240 )
 camera.framerate = 60
 rawCapture= PiRGBArray( camera, size=( 320, 240 ) )
-face_cascade = cv2.CascadeClassifier( '/home/pi/opencv-3.0.0/data/lbpcascades/lbpcascade_frontalface.xml' ) # Load a cascade file for detecting faces
-for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port=True ): # Capture frames from the camera
-    image = frame.array    # Use the cascade file we loaded to detect faces
+face_cascade = cv2.CascadeClassifier( '/home/pi/opencv-3.0.0/data/lbpcascades/lbpcascade_frontalface.xml' )   #Load a cascade file for detecting faces
+for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port=True ):   #Capture frames from the camera
+    image = frame.array   #Use the cascade file we loaded to detect faces
     gray = cv2.cvtColor( image, cv2.COLOR_BGR2GRAY )
     faces = face_cascade.detectMultiScale( gray )   
-    print "Found " + str( len( faces ) ) + " face(s)"
-    # Draw a rectangle around every face and move the motor towards the face
+    print "Found " + str( len( faces ) ) + " face(s)"   #Draw a rectangle around every face and move the motor towards the face
     for ( x, y, w, h ) in faces:
         cv2.rectangle( image, ( x, y ), ( x + w, y + h ), ( 100, 255, 100 ), 2 )
         cv2.putText( image, "Face No." + str( len( faces ) ), ( x, y ), cv2.FONT_HERSHEY_SIMPLEX, 0.5, ( 0, 0, 255 ), 2 )
@@ -50,8 +48,8 @@ for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port
     else: 
 	GPIO.output(TRANS_OUT,False)
 	test=False  
-    cv2.imshow( "Frame", image )   # Show the frame
-    cv2.waitKey( 1 )    # Clear the stream in preparation for the next frame
+    cv2.imshow( "Frame", image )   #Show the frame
+    cv2.waitKey( 1 )   #Clear the stream in preparation for the next frame
     rawCapture.truncate( 0 )
 GPIO.cleanup()
 ```
