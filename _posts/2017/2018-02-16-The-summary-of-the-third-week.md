@@ -21,30 +21,20 @@ catalog: true
 
 - The code for recognizing human face is shown as follows. 
 ```Python
-### Imports ###
-from picamera.array import PiRGBArray
+from picamera.array import PiRGBArray ### Imports ###
 from picamera import PiCamera
 import cv2
 import RPi.GPIO as GPIO
-
-# Setup the GPIO mode as pin-coded
-GPIO.setmode(GPIO.BCM)
-
+GPIO.setmode(GPIO.BCM) # Setup the GPIO mode as pin-coded
 #Set GPIO 18 as output mode
 TRANS_OUT=18
 GPIO.setup(TRANS_OUT, GPIO.OUT)
-
-# Setup the camera
-camera = PiCamera()
+camera = PiCamera() # Setup the camera
 camera.resolution = ( 320, 240 )
 camera.framerate = 60
 rawCapture= PiRGBArray( camera, size=( 320, 240 ) )
-
-# Load a cascade file for detecting faces
-face_cascade = cv2.CascadeClassifier( '/home/pi/opencv-3.0.0/data/lbpcascades/lbpcascade_frontalface.xml' ) 
-
-# Capture frames from the camera
-for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port=True ):
+face_cascade = cv2.CascadeClassifier( '/home/pi/opencv-3.0.0/data/lbpcascades/lbpcascade_frontalface.xml' ) # Load a cascade file for detecting faces
+for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port=True ): # Capture frames from the camera
     image = frame.array    # Use the cascade file we loaded to detect faces
     gray = cv2.cvtColor( image, cv2.COLOR_BGR2GRAY )
     faces = face_cascade.detectMultiScale( gray )   
@@ -59,10 +49,8 @@ for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port
 	test=True
     else: 
 	GPIO.output(TRANS_OUT,False)
-	test=False
-	
-    # Show the frame
-    cv2.imshow( "Frame", image )
+	test=False  
+    cv2.imshow( "Frame", image )   # Show the frame
     cv2.waitKey( 1 )    # Clear the stream in preparation for the next frame
     rawCapture.truncate( 0 )
 GPIO.cleanup()
