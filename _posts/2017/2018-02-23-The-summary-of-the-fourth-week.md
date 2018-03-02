@@ -1,12 +1,12 @@
 ---
 layout: "post"
-title: "The summary of the third week"
+title: "The summary of the fourth week"
 date: "2018-02-23 10:30"
 author: "Fang Zhou"
 catalog: true
 ---
 ## Summary of Week’s Activities
-- Try a new coding method --- multi-process
+- Try a new coding method -- multi-process
 - Modify the circuit to ensure the circuit works well
  
 ## Problem encountered and solutions
