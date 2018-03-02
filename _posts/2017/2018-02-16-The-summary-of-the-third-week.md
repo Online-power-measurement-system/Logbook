@@ -26,18 +26,23 @@ from picamera.array import PiRGBArray
 from picamera import PiCamera
 import cv2
 import RPi.GPIO as GPIO
+
 # Setup the GPIO mode as pin-coded
 GPIO.setmode(GPIO.BCM)
+
 #Set GPIO 18 as output mode
 TRANS_OUT=18
 GPIO.setup(TRANS_OUT, GPIO.OUT)
+
 # Setup the camera
 camera = PiCamera()
 camera.resolution = ( 320, 240 )
 camera.framerate = 60
 rawCapture= PiRGBArray( camera, size=( 320, 240 ) )
+
 # Load a cascade file for detecting faces
 face_cascade = cv2.CascadeClassifier( '/home/pi/opencv-3.0.0/data/lbpcascades/lbpcascade_frontalface.xml' ) 
+
 # Capture frames from the camera
 for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port=True ):
     image = frame.array    # Use the cascade file we loaded to detect faces
@@ -55,6 +60,7 @@ for frame in camera.capture_continuous( rawCapture, format="bgr", use_video_port
     else: 
 	GPIO.output(TRANS_OUT,False)
 	test=False
+	
     # Show the frame
     cv2.imshow( "Frame", image )
     cv2.waitKey( 1 )    # Clear the stream in preparation for the next frame
