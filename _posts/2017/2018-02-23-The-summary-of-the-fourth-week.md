@@ -24,3 +24,4 @@ it to the ground and another resistor which was used to protect the circuit.
 the Raspberry Pi and the circuit worked well. When the camera catches a person’s face, 
 it will show a green square around his face on the screen and the LED which represents 
 the automatic door will light for 5 seconds at the same time. The demo video is shown below.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yfqtsYiklZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
