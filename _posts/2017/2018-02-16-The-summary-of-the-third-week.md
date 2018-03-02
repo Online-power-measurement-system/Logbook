@@ -13,7 +13,7 @@ catalog: true
 
 ## Problem encountered and solutions
 
-- \# At the beginning, the system cannot shoot the video and recognize the human’s face at the same time. Finally, we find some information from the Internet and modify the code to solve this problem.
+- At the beginning, the system cannot shoot the video and recognize the human’s face at the same time. Finally, we find some information from the Internet and modify the code to solve this problem.
 - We try to combine the code of controlling LED and recognizing face. However, there is a problem that when the camera has recognized a face, the LED is light, but the display of camera is stuck. This problem now we can’t solve it.
 
 
