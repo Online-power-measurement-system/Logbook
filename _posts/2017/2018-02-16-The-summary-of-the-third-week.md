@@ -20,7 +20,7 @@ catalog: true
 ## Achievement in this week
 
 - The code for recognizing human face is shown as follows. 
-```Python
+```python
 from picamera.array import PiRGBArray 
 from picamera import PiCamera
 import cv2
