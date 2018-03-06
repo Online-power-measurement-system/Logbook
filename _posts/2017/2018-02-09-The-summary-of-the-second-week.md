@@ -14,6 +14,7 @@ catalog: true
 ## Problem encountered and solutions
 
 - When we installed the OpenCV library function, we found the CPU was in high load. We had to use the fan to cool down the chip.
+-Since the OpenCV is compiled from the original code using gcc. We met the problem that the gcc version is not suitable for OpenCV 3.0.0.
 - The code could not run for there are over three errors. After searching the answers in goole, we debugged it.
 
 ## Achievement in this week
@@ -64,6 +65,15 @@ cd build
 -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.0.0/modules \
 -D BUILD_EXAMPLES=ON ..
 ```
+The information of OpenCV is shown as following picture
+![openCV](/img/site/openCV.png)
 
-
+#### Compile OpenCV
+```python
+make -j4		#use 4 cores
+```
+#### With OpenCV compiled successfully, it can be installed
+```python
+sudo make install
+```
 - We found the problems in our code and solve them by searching in the Internet. It helped us to grasp the operating instructions.
