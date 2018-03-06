@@ -15,6 +15,18 @@ catalog: true
 ![dropbox](/img/site/dropbox.png)
  
 ## Achievement in this week
-- We can upload the photos to the cloud on a stable network connection. The results are shown as follow pictures.
+- We can upload the photos to the cloud on a stable network connection. There are two steps.
+### Get Dropbox uploader
+```python
+githubclonegithub.com/andreafabrizi/Dropbox-Uploader.git
+./dropbox_uploader.sh
+```
+### Use instruction to upload
+```python
+from subprocess import call
+Upload = "home/pi/Dropbox_Uploader/dropbox_uploader.sh upload path/to/file dropbox_filename"
+call ([Upload], shell=True)
+```
+- The results are shown as follow pictures.
 ![save](/img/site/save.png)
 ![cloud](/img/site/cloud.png)
