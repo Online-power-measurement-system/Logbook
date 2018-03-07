@@ -15,7 +15,7 @@ catalog: true
 
 - When we installed the OpenCV library function, we found the CPU was in high load. We had to use the fan to cool down the chip.
 - Since the OpenCV is compiled from the original code using gcc. We met the problem that the gcc version is not suitable for OpenCV 3.0.0.
-- The code could not run for there are over three errors. After searching the answers in goole, we debugged it.
+- The code could not run for there are over three errors. After searching the answers in google, we debugged it.
 
 ## Achievement in this week
 
