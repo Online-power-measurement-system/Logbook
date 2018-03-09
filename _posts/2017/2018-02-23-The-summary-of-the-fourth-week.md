@@ -7,7 +7,8 @@ catalog: true
 ---
 ## Summary of Week’s Activities
 - Try a new coding method -- multi-process
-- Modify the circuit to ensure the circuit works well
+- Modify the circuit to ensure the circuit works well. The circuit is shown as follows.
+![main](/img/site/main.jpg)
  
 ## Problem encountered and solutions
 - Multi-process failed finally because the value could not be transferred 
