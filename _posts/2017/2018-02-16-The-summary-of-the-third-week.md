@@ -10,6 +10,8 @@ catalog: true
 - Solve the problem of real-time face recognition.
 - Write the code for Raspberry Pi to drive LED lights.
 - Run the program which can recognize the face and control LED lights.
+- Here is the picture of schematic diagram.
+![GPIO](/img/site/GPIO.jpg)
 
 ## Problem encountered and solutions
 
