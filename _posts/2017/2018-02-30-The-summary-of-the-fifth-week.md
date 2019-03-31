@@ -9,5 +9,5 @@ catalog: true
 - Take a photo when the person’s face detected
 - Install Dropbox on Raspberry Pi
 - Integrate Dropbox API into the code modified in week 4
- 
+ -sad
 
