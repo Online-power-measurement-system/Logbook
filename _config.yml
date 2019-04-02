@@ -1,10 +1,10 @@
 # Site settings
-title: Door surveillance system based on Raspberry Pi
-SEOTitle: Door surveillance system based on Raspberry Pi
+title: Development of an online power measurement system with C++
+SEOTitle: Development of an online power measurement system with C++
 header-img: https://source.unsplash.com/category/nature/2600x500
 email: fang.zhoudzt@gmail.com
-description: "The blog which recording work process of our project"
-keyword: "Door surveillance system, Raspberry Pi"
+description: "The blog which recording work process of final year project"
+keyword: "Online power measurement system, C++"
 url: "http://zfdzt.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
