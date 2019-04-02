@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Hello-World"
+title: "Hello World"
 date: "2018-06-01 10:30"
 author: "Fang Zhou"
 catalog: true
