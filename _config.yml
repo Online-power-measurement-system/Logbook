@@ -70,7 +70,7 @@ kramdown:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Why not have something fun?"
-sidebar-avatar: /img/site/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/site/plasma.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
