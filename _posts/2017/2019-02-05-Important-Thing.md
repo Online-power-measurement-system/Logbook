@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Improtant Thing"
+title: "Important Thing"
 date: "2019-02-05 10:30"
 author: "Fang Zhou"
 catalog: true
